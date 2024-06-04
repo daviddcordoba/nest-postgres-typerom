@@ -14,7 +14,7 @@ async function bootstrap() {
       transform: true, // que trasnforme, cuando pueda, los datos.., el que hace la magia, para que no tenga que parsear algunos parametros
     })
   );
-
+  app.enableCors()
   await app.listen(parseInt(process.env.PORT)||3000);
 }
 
